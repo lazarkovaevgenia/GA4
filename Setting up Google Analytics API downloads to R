@@ -1,0 +1,15 @@
+library(googleAnalyticsR)
+ga_auth(json_file = 'acoustic-garden-317516-a6e925691208.json')
+
+ga_account_list("ga4")
+
+metadata <- ga_meta(version = "data")
+
+ga_meta("data", propertyId = 251613416)
+
+my_property_id <- 251613416
+basic <- ga_data(
+  my_property_id,
+  metrics = c("activeUsers","sessions"),
+  date_range = c("2023-01-01", "2023-03-01")
+  )
