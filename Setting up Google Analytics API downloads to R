@@ -10,6 +10,6 @@ ga_meta("data", propertyId = 251613416)
 my_property_id <- 251613416
 basic <- ga_data(
   my_property_id,
-  metrics = c("activeUsers","sessions"),
+  metrics = c("activeUsers","sessions", "screenPageViews"),
   date_range = c("2023-01-01", "2023-03-01")
   )
